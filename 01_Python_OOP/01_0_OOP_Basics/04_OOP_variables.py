@@ -15,8 +15,9 @@ class Car:
         - Instance Namespace: the place where we declare instance varaibles(init method)
         - Class Namespace: the place where the class variables are declared.
 
-    Note: using objects for the same set of instance variables, you can store different values. However, if you change 
-    the class variable, it will be reflected in all the objects, (irrespective of the values held in the instance variables). 
+    Note: using objects for the same set of instance variables, you can store different values. 
+          However, if you change the class variable, it will be reflected in all the objects, 
+          (irrespective of the values held in the instance variables). 
 
     """
     wheels = 4

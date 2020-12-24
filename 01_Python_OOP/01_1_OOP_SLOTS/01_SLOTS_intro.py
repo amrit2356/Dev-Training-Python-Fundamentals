@@ -3,24 +3,26 @@ SLOTS -
     Speed of accessing the objects
     Memory consumed to create the objects.
 """
-import timeit
-from pympler import asizeof
-
-class ABC:
-    def fn(self):
-        self.third ="Universe"
-
-class Slots():
-    __slots__ = ('first','second','third')
 
 
-obj = ABC()
-obj.fn()
-obj.first = "hello"
-obj.second = "World"
+class Planet:
+    def __init__(self,cities):
+        self.cities = cities
 
-print(obj.__dict__)
+earth  =  Planet(['Delhi','Oslo'])
+print(earth)
+print(earth.cities)
 
-obj_slots = Slots()
-def fn_slots():
-    
+
+
+class SlottedPlanet:
+    __slots__ = ['cities']
+    def __init__(self, cities):
+        self.cities = cities
+
+slottedearth = SlottedPlanet(['London','New York'])
+print(slottedearth)
+print(slottedearth.cities)
+
+earth.rivers =('Thames','Siene')
+

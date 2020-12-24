@@ -1,5 +1,7 @@
 """
 Implementation of Polymorphism - DuckTyping in Python
+    - Polymorphism -> one name multiple types of execution
+    
 """
 
 class Pycharm:
