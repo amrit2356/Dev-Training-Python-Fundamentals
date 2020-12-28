@@ -4,15 +4,18 @@ Implementation of Generators in Python
 
 """
 
-def topten():
-    n = 1
-    while(n<=10):
-        sq = n*n
-        yield sq
-        n+=1
+def square_numbers(nums):
+    for i in nums:
+        yield(i*i)
+
+my_nums = square_numbers([1,2,3,4,5])
+
+for num in my_nums:
+    print(num)
 
 
-values = topten()
-
-for i in values:
-    print(i)
+# List Comprehension Implementation of Generator
+my_nums = (x*x for x in [1,2,3,4,5])
+print(my_nums)
+for num in my_nums:
+    print(num)
