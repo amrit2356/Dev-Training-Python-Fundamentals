@@ -41,13 +41,13 @@ class B(): #Sub Class
         print("print feature 4")
 
 class C(A,B):
-    """"
+    """
     Method Resolution Order(MRO):
         Whenever, multiple inheritance is being invoked, if we call the constructor of the sub class
     the object will invoke the first class's constructor. This is called Method Resolution Order. Here,
     A takes higher precedence over B, and therefore, A's constructor was invoked.
     
-    """"
+    """
     def __init__(self):
         super().__init__()
         print(" Im executing __init__ of C Class")
